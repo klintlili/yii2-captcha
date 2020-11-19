@@ -9,11 +9,11 @@ Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 Either run
 ```
-php composer.phar require --prefer-dist juliardi/yii2-captcha "*"
+php composer.phar require --prefer-dist klintlili/yii2-captcha "*"
 ```
 or add
 ```
-"juliardi/yii2-captcha": "*"
+"klintlili/yii2-captcha": "*"
 ```
 to the require section of your `composer.json` file.
 
@@ -28,7 +28,7 @@ public function actions()
 {
     return [
         'captcha' => [
-            'class' => 'juliardi\captcha\CaptchaAction',
+            'class' => 'klintlili\captcha\CaptchaAction',
             //'length' => 5, // captcha character count
             //'width' => 150, // width of generated captcha image
             //'height' => 40, // height of generated captcha image
@@ -47,7 +47,7 @@ An integer value to set the height of generated CAPTCHA image
 ##### View file
 Add the following code to your view to render CAPTCHA image and input. 
 ```php
-use juliardi\captcha\Captcha;
+use klintlili\captcha\Captcha;
 ...
 <?php echo Captcha::widget([
     'model' => $model,
@@ -61,7 +61,7 @@ use juliardi\captcha\Captcha;
 ```
 You can also use ActiveForm instance to render CAPTCHA input.
 ```php
-use juliardi\captcha\Captcha;
+use klintlili\captcha\Captcha;
 ...
 <?php echo $form->field($model, 'captcha')->widget(Captcha::className()) ?>
 
@@ -77,7 +77,7 @@ the HTML attributes for the input tag.
 ##### Validation
 Add the following rule to your model to validate the captcha input :
 ```php
-use juliardi\captcha\CaptchaValidator;
+use klintlili\captcha\CaptchaValidator;
 ...
 public function rules()
 {
