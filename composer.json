@@ -1,0 +1,23 @@
+{
+    "name": "klintlili/yii2-captcha",
+    "description": "Captcha library wrapper for Yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","captcha"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "klintlili",
+            "email": "909102757@qq.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0",
+        "gregwar/captcha": "1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "klintlili\\captcha\\": "src"
+        }
+    }
+}
+ 
